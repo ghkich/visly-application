@@ -1,0 +1,16 @@
+[Settings]
+# Added automatically by the Netlify CLI. It has no effect during normal
+# Git-backed deploys.
+ID = "4f330402-8611-45e3-83a8-367a2e00a76e"
+
+# Settings in the [build] context are global and are applied to all contexts
+[build]
+  publish = "build/"
+  command = "yarn build"
+
+# The following redirect is intended for use with most SPAs that handle
+# routing internally.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

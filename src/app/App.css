@@ -1,0 +1,67 @@
+.tab-nav {
+  @apply text-center block rounded text-gray-500 text-sm py-2 px-2 transition duration-150 whitespace-no-wrap;
+}
+
+@screen sm {
+  .tab-nav {
+    @apply px-4;
+  }
+}
+
+.tab-nav:hover {
+  @apply bg-gray-200 text-gray-600 bg-opacity-50;
+}
+
+.tab-nav:focus {
+  @apply outline-none bg-gray-100 text-gray-600;
+}
+
+.tab-nav.active {
+  @apply bg-gray-200 text-pink-500 bg-opacity-50;
+}
+
+.info {
+  @apply py-2 px-10 bg-gray-100 text-center bg-opacity-25 text-sm rounded text-gray-500 border border-gray-300 border-opacity-75;
+}
+
+.alert-warning {
+  @apply bg-orange-100 border border-orange-300 text-xs text-orange-700 px-4 py-3 rounded;
+}
+
+.alert-error {
+  @apply bg-red-100 border border-red-300 text-xs text-red-700 px-4 py-3 relative rounded;
+}
+
+.code {
+  @apply p-2 bg-gray-700 text-white text-xs rounded;
+}
+
+.sidenav-item {
+  @apply py-1 px-3 mr-2 rounded transition-colors duration-150 cursor-pointer;
+}
+
+@screen sm {
+  .sidenav-item {
+    @apply px-5 mr-0 rounded-r-none;
+  }
+}
+
+.sidenav-item:hover {
+  @apply bg-gray-100;
+}
+
+.ui-input {
+  @apply block w-full bg-white border border-gray-400 text-gray-700 p-2 mb-3 rounded-sm transition-colors duration-150;
+}
+
+.ui-input::placeholder {
+  opacity: 0.5;
+}
+
+.ui-input:hover {
+  @apply border-gray-500;
+}
+
+.ui-input:focus {
+  @apply border-purple-500 outline-none;
+}
